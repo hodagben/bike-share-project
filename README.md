@@ -50,8 +50,6 @@ We used two models for our baseline. The first baseline model was $k$-Neighbors 
 
 For each model we tested we tuned either a hyperparameter or a subset of features through five-fold cross-validation.
 
-The subset of features was selected via cross-validated best subsets regression, and turned out to be the daily maximum temperature, length of time between sunrise and sunset, an interaction term between these two features, difference between maximum and minimum daily temperature, total daily precipitation, and the maximum wind gust.
-
 Thus the full list of models we tested were
 * $k$-Neighbors Regression on the day of the year,
 * Linear Regression on the best subset of features,
